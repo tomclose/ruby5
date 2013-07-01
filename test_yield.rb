@@ -26,5 +26,8 @@ describe 'two_of_each' do
         assert_output('112233') do
             two_of_each([1,2,3]) { |n| print n }
         end
+        assert_output('2233119922') do
+            two_of_each([2,3,1,9,2]) { |n| print n }
+        end
     end
 end
